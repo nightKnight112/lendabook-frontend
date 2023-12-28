@@ -1,10 +1,6 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Link as RouterLink, Route, Routes} from 'react-router-dom';
 import './styles/Navbar.css';
-import { GetFunctionsForUser } from './components/User/UserList';
-import { GetCommunityFuncUser } from './components/Community/CommunityList';
-import { GetBookFunctionalitiesUser } from './components/Book/BookList';
-import { GetAuthorFuncUser } from './components/Author/AuthorList';
 import { UserForm } from './components/User/UserForm';
 import { AddBooksByUser, AddUserToCommunity, DeleteBooksDonatedByUser, GetFunctionalities } from './components/User/UserFunctionalities';
 import { UserLogin } from './components/Login/LoginForm';
