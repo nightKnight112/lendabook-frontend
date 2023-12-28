@@ -240,8 +240,8 @@ const GetUserByRating = () => {
 const GetAllCommunitiesJoinedByUser = () => {
   const [input, setInput] = useState('');
   const [communities, setCommunities] = useState([]);
-  const [users, setUsers] = useState([]);
-  const [books, setBooks] = useState([]);
+  // const [users, setUsers] = useState([]);
+  // const [books, setBooks] = useState([]);
 
   const handleInputChange = (e) => {
     setInput(e.target.value);
@@ -250,8 +250,8 @@ const GetAllCommunitiesJoinedByUser = () => {
   const handleGetAllCommunitiesJoinedByUser = async () => {
     const data = await getAllCommunitiesJoinedByUser(input);
     setCommunities(data);
-    setUsers([]);
-    setBooks([]);
+    // setUsers([]);
+    // setBooks([]);
   };
   const columns = [
     { field: 'id', headerName: 'ID', width: 20 },
@@ -301,8 +301,8 @@ const GetAllCommunitiesJoinedByUser = () => {
 const GetAllBooksDonatedByUser = () => {
   const [input, setInput] = useState('');
   const [books, setBooks] = useState([]);
-  const [users, setUsers] = useState([]);
-  const [communities, setCommunities] = useState([]);
+  // const [users, setUsers] = useState([]);
+  // const [communities, setCommunities] = useState([]);
 
   const handleInputChange = (e) => {
     setInput(e.target.value);
@@ -311,8 +311,8 @@ const GetAllBooksDonatedByUser = () => {
   const handleGetAllBooksDonatedByUser = async () => {
     const data = await getAllBooksDonatedByUser(input);
     setBooks(data);
-    setUsers([]);
-    setCommunities([]);
+    // setUsers([]);
+    // setCommunities([]);
   };
 
   const columns = [
